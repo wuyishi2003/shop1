@@ -1,0 +1,639 @@
+---------------------------------------------------------------
+[2018-12-17T08:30:06+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.331000s][吞吐率：0.75req/s] [内存消耗：2,361.05kb] [文件加载：110]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.012000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'where' => '{"recommend":1}',
+  'method' => 'goods.getlist',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.024000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_goods` [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_goods` WHERE (  `is_recommend` = 1  AND `marketable` = 1 ) AND `jshop_goods`.`isdel` IS NULL ORDER BY sort asc LIMIT 0,10 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jshop_goods` WHERE (  `is_recommend` = 1  AND `marketable` = 1 ) AND `jshop_goods`.`isdel` IS NULL LIMIT 1 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_images` [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '1c1ad1a31330edc899a5fa47718a95f4' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = 'b419e4164d5726d057b2ae195f9a96df' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '6ee0f5a5ac6c53418852ee6cc78aeb48' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = 'fce63f9c69c6c4ec606b544fcc7610a2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '3e1c30dd1125de24e5395d3cd39ef5d8' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '4f86bd749dddd098403fc44a1e473643' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '1575deb7e275d200f105ba941d815ab5' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '052d4af90ec88851c10982bf7fdfa763' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = 'deed2e4f1c54f87eb672ad8c444ba229' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = 'b05b9dd851f02f24c842f0e5178f6829' LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: sql[D:\newphp\PHPTutorial\WWW\shop1\application\api\controller\Goods.php:185]
+---------------------------------------------------------------
+[2018-12-17T08:30:07+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.533000s][吞吐率：0.65req/s] [内存消耗：2,032.15kb] [文件加载：106]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.015000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '24',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'method' => 'notice.noticeList',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.298000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_notice` [ RunTime:0.107000s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`ctime` FROM `jshop_notice` WHERE (  `type` = 1 ) AND `jshop_notice`.`isdel` IS NULL ORDER BY `id`  desc LIMIT 0,5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-17T08:30:07+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.520000s][吞吐率：0.66req/s] [内存消耗：2,277.78kb] [文件加载：109]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.015000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '27',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'type' => '3',
+  'method' => 'group.getlist',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.300000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_promotion` [ RunTime:0.097000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_promotion` WHERE (  `type` = 3  AND `status` = 1  AND `stime` < 1545006606  AND `etime` > 1545006606 ) AND `jshop_promotion`.`isdel` IS NULL ORDER BY sort asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-17T08:30:07+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.282000s][吞吐率：0.78req/s] [内存消耗：2,065.30kb] [文件加载：106]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.015000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '24',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'method' => 'coupon.couponlist',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.102000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_promotion` [ RunTime:0.099000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`status`,`exclusive`,`stime`,`etime` FROM `jshop_promotion` WHERE (  `etime` > 1545006606  AND `status` = 1  AND `type` = 2  AND `auto_receive` = 1 ) AND `jshop_promotion`.`isdel` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-17T08:30:07+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.521000s][吞吐率：0.66req/s] [内存消耗：2,075.43kb] [文件加载：106]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.015000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'code' => 'tpl1_slider',
+  'method' => 'advert.getAdvertList',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.257000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_advertisement` [ RunTime:0.087000s ]
+[ sql ] [ SQL ] SELECT `id`,`position_id`,`code`,`name`,`img`,`type`,`val`,`sort` FROM `jshop_advertisement` WHERE  `code` = 'tpl1_slider' ORDER BY sort ASC LIMIT 0,5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jshop_advertisement` WHERE  `code` = 'tpl1_slider' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_images` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '86f86e9df1bc9f2699591f355de7a134' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '5a87885b04a4de53b942d8baa8acdfd2' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-17T08:30:07+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.399000s][吞吐率：0.71req/s] [内存消耗：2,277.78kb] [文件加载：109]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.052000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '27',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'type' => '4',
+  'method' => 'group.getlist',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.124000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_promotion` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_promotion` WHERE (  `type` = 4  AND `status` = 1  AND `stime` < 1545006606  AND `etime` > 1545006606 ) AND `jshop_promotion`.`isdel` IS NULL ORDER BY sort asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-17T08:30:07+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.231000s][吞吐率：0.81req/s] [内存消耗：2,360.96kb] [文件加载：110]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.030000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'where' => '{"hot":1}',
+  'method' => 'goods.getlist',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.068000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_goods` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_goods` WHERE (  `is_hot` = 1  AND `marketable` = 1 ) AND `jshop_goods`.`isdel` IS NULL ORDER BY sort asc LIMIT 0,10 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jshop_goods` WHERE (  `is_hot` = 1  AND `marketable` = 1 ) AND `jshop_goods`.`isdel` IS NULL LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_images` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '1c1ad1a31330edc899a5fa47718a95f4' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = 'b419e4164d5726d057b2ae195f9a96df' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '6ee0f5a5ac6c53418852ee6cc78aeb48' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = 'fce63f9c69c6c4ec606b544fcc7610a2' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '3e1c30dd1125de24e5395d3cd39ef5d8' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '4f86bd749dddd098403fc44a1e473643' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '1575deb7e275d200f105ba941d815ab5' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = '052d4af90ec88851c10982bf7fdfa763' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = 'deed2e4f1c54f87eb672ad8c444ba229' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `url` FROM `jshop_images` WHERE  `id` = 'b05b9dd851f02f24c842f0e5178f6829' LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: sql[D:\newphp\PHPTutorial\WWW\shop1\application\api\controller\Goods.php:185]
+---------------------------------------------------------------
+[2018-12-17T08:30:08+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.167000s][吞吐率：0.86req/s] [内存消耗：2,228.00kb] [文件加载：105]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.013000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'token' => '3e80aa0a52e3af117f3c89c3282670e4',
+  'method' => 'order.getorderstatusnum',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_user_token` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_user_token` WHERE  `token` = '3e80aa0a52e3af117f3c89c3282670e4'  AND `ctime` > 1529454607 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_order` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jshop_order` WHERE (  `user_id` = 21  AND `status` = 1  AND `pay_status` = 1 ) AND `jshop_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jshop_order` WHERE (  `user_id` = 21  AND `status` = 1  AND `pay_status` = 2  AND `ship_status` = 1 ) AND `jshop_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jshop_order` WHERE (  `user_id` = 21  AND `status` = 1  AND `pay_status` = 2  AND `ship_status` = 3  AND `confirm` = 1 ) AND `jshop_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jshop_order` WHERE (  `user_id` = 21  AND `status` = 1  AND `pay_status` = 2  AND `ship_status` = 3  AND `confirm` = 2  AND `is_comment` = 1 ) AND `jshop_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-17T08:30:09+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.202000s][吞吐率：0.83req/s] [内存消耗：2,218.09kb] [文件加载：105]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.018000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '55',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'token' => '3e80aa0a52e3af117f3c89c3282670e4',
+  'method' => 'user.info',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.024000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_user_token` [ RunTime:0.040000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_user_token` WHERE  `token` = '3e80aa0a52e3af117f3c89c3282670e4'  AND `ctime` > 1529454607 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_user` [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`mobile`,`sex`,`birthday`,`avatar`,`nickname`,`balance`,`point`,`status` FROM `jshop_user` WHERE (  `id` = 21 ) AND `jshop_user`.`isdel` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-17T08:30:09+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.272000s][吞吐率：0.79req/s] [内存消耗：2,089.32kb] [文件加载：103]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.014000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '19',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'method' => 'user.ispoint',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_setting` [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_setting` WHERE  `skey` = 'point_switch' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-17T08:30:10+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.280000s][吞吐率：0.78req/s] [内存消耗：2,100.10kb] [文件加载：106]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.013000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '360',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'user_id' => 
+  array (
+    'id' => '21',
+    'username' => '',
+    'mobile' => '18660441013',
+    'sex' => '3',
+    'birthday' => '',
+    'avatar' => 'http://localhost:8086/static/images/default.png',
+    'nickname' => 'admin',
+    'balance' => '3310821.60',
+    'point' => '0',
+    'status' => '1',
+  ),
+  'token' => '3e80aa0a52e3af117f3c89c3282670e4',
+  'method' => 'store.isclerk',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_user_token` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_user_token` WHERE  `token` = '3e80aa0a52e3af117f3c89c3282670e4'  AND `ctime` > 1529454609 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_setting` [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_setting` WHERE  `skey` = 'store_switch' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-17T08:30:12+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.193000s][吞吐率：0.84req/s] [内存消耗：2,403.12kb] [文件加载：110]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.016000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '88',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '5',
+  'status' => '3',
+  'token' => '3e80aa0a52e3af117f3c89c3282670e4',
+  'method' => 'order.getorderlist',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_user_token` [ RunTime:0.044000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_user_token` WHERE  `token` = '3e80aa0a52e3af117f3c89c3282670e4'  AND `ctime` > 1529454611 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_order` [ RunTime:0.034000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_order` WHERE (  `status` = 1  AND `pay_status` = 2  AND `ship_status` = 3  AND `confirm` = 1  AND `user_id` = 21 ) AND `jshop_order`.`isdel` IS NULL ORDER BY ctime desc LIMIT 0,5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_order_items` [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_order_items` WHERE  `order_id` IN ('15449664785105') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jshop_order` WHERE (  `status` = 1  AND `pay_status` = 2  AND `ship_status` = 3  AND `confirm` = 1  AND `user_id` = 21 ) AND `jshop_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-17T08:30:17+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.506000s][吞吐率：0.66req/s] [内存消耗：2,953.12kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.013000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '15449664785105',
+  'token' => '3e80aa0a52e3af117f3c89c3282670e4',
+  'method' => 'order.details',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.000000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_user_token` [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_user_token` WHERE  `token` = '3e80aa0a52e3af117f3c89c3282670e4'  AND `ctime` > 1529454615 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_order` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_order` WHERE (  `order_id` = '15449664785105' ) AND `jshop_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_order_items` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_order_items` WHERE  `order_id` = '15449664785105' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_user` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_user` WHERE (  `id` = 21 ) AND `jshop_user`.`isdel` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_bill_delivery` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_bill_delivery` WHERE  `order_id` = '15449664785105' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_logistics` [ RunTime:0.029000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_logistics` WHERE  `logi_code` = 'shentong' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_ship` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_ship` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_area` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `id` = 110101 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `parent_id` = 110100 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `id` = 110100 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `parent_id` = 110000 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `id` = 110000 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `parent_id` = 0 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_setting` [ RunTime:0.030000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_setting` WHERE  `skey` = 'order_autoSign_time' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_setting` WHERE  `skey` = 'kuaidi100_customer' LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: status[D:\newphp\PHPTutorial\WWW\shop1\application\common\model\BillDelivery.php:245]
+---------------------------------------------------------------
+[2018-12-17T08:30:26+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.180000s][吞吐率：0.85req/s] [内存消耗：2,142.62kb] [文件加载：108]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.014000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '60',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'code' => 'shentong',
+  'no' => '3389841888059 ',
+  'method' => 'order.logisticbyapi',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_setting` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_setting` WHERE  `skey` = 'kuaidi100_customer' LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: status[D:\newphp\PHPTutorial\WWW\shop1\application\common\model\BillDelivery.php:245]
+---------------------------------------------------------------
+[2018-12-17T08:30:43+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.150000s][吞吐率：0.87req/s] [内存消耗：2,142.62kb] [文件加载：108]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.013000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '60',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'code' => 'shentong',
+  'no' => '3389841888059 ',
+  'method' => 'order.logisticbyapi',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_setting` [ RunTime:0.034000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_setting` WHERE  `skey` = 'kuaidi100_customer' LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: status[D:\newphp\PHPTutorial\WWW\shop1\application\common\model\BillDelivery.php:245]
+---------------------------------------------------------------
+[2018-12-17T08:31:53+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.158000s][吞吐率：0.86req/s] [内存消耗：2,142.62kb] [文件加载：108]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.012000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '60',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'code' => 'shentong',
+  'no' => '3389841888059 ',
+  'method' => 'order.logisticbyapi',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_setting` [ RunTime:0.037000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_setting` WHERE  `skey` = 'kuaidi100_customer' LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: status[D:\newphp\PHPTutorial\WWW\shop1\application\common\model\BillDelivery.php:245]
+---------------------------------------------------------------
+[2018-12-17T08:31:56+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.130000s][吞吐率：0.88req/s] [内存消耗：2,142.62kb] [文件加载：108]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.013000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '60',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'code' => 'shentong',
+  'no' => '3389841888059 ',
+  'method' => 'order.logisticbyapi',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_setting` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_setting` WHERE  `skey` = 'kuaidi100_customer' LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: status[D:\newphp\PHPTutorial\WWW\shop1\application\common\model\BillDelivery.php:245]
+---------------------------------------------------------------
+[2018-12-17T08:34:12+08:00] 0.0.0.0 POST /api.html
+[ info ] localhost:8086/api.html [运行时间：1.516000s][吞吐率：0.66req/s] [内存消耗：3,081.02kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitHooks->run @app_init [ RunTime:0.013000s ]
+[ info ] [ LANG ] D:\newphp\PHPTutorial\WWW\shop1\thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8092/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1',
+  'origin' => 'http://localhost:8092',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '92',
+  'connection' => 'close',
+  'host' => 'localhost:8086',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '15449664785105',
+  'token' => '3e80aa0a52e3af117f3c89c3282670e4',
+  'method' => 'order.aftersalesstatus',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT file
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008000s ] mysql:host=localhost;port=3306;dbname=jshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_user_token` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_user_token` WHERE  `token` = '3e80aa0a52e3af117f3c89c3282670e4'  AND `ctime` > 1529454851 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_order` [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_order` WHERE (  `order_id` = '15449664785105' ) AND `jshop_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_order_items` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_order_items` WHERE  `order_id` = '15449664785105' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_user` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_user` WHERE (  `id` = 21 ) AND `jshop_user`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_bill_delivery` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_bill_delivery` WHERE  `order_id` = '15449664785105' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_logistics` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_logistics` WHERE  `logi_code` = 'shentong' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_ship` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_ship` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_area` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `id` = 110101 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `parent_id` = 110100 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `id` = 110100 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `parent_id` = 110000 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `id` = 110000 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `jshop_area` WHERE  `parent_id` = 0 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_setting` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_setting` WHERE  `skey` = 'order_autoSign_time' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `jshop_setting` WHERE  `skey` = 'kuaidi100_customer' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_bill_aftersales` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT SUM(refund) AS tp_sum FROM `jshop_bill_aftersales` WHERE  `order_id` = '15449664785105'  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jshop_bill_aftersales_items` [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT SUM(asi.nums) AS tp_sum FROM `jshop_bill_aftersales_items` `asi` INNER JOIN `jshop_bill_aftersales` `a` ON `asi`.`aftersales_id`=`a`.`aftersales_id` WHERE  `asi`.`order_items_id` = '19'  AND `a`.`status` = '2' LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: status[D:\newphp\PHPTutorial\WWW\shop1\application\common\model\BillDelivery.php:245]

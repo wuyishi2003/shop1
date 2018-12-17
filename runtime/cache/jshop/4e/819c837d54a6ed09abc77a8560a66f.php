@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+think_serialize:a:14:{s:8:"app_init";a:1:{i:0;s:29:"app\common\behavior\InitHooks";}s:9:"app_begin";a:0:{}s:11:"module_init";a:0:{}s:12:"action_begin";a:0:{}s:11:"view_filter";a:0:{}s:9:"log_write";a:0:{}s:7:"app_end";a:0:{}s:8:"testhook";a:1:{i:0;s:35:"\addons\appletmessage\Appletmessage";}s:13:"sendwxmessage";a:1:{i:0;s:35:"\addons\appletmessage\Appletmessage";}s:4:"kefu";a:1:{i:0;s:21:"\addons\hecong\Hecong";}s:7:"sendsms";a:2:{i:0;s:23:"\addons\mms1086\Mms1086";i:1;s:27:"\addons\aliyunsms\Aliyunsms";}s:10:"trustlogin";a:1:{i:0;s:29:"\addons\trustlogin\Trustlogin";}s:13:"trustcallback";a:1:{i:0;s:29:"\addons\trustlogin\Trustlogin";}s:10:"orderpayed";a:1:{i:0;s:33:"\addons\distribution\Distribution";}}
