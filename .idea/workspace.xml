@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb7d4c17-37e1-4caa-b022-846939337a36" name="Default" comment="" />
+    <list default="true" id="eb7d4c17-37e1-4caa-b022-846939337a36" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/application/common/model/BillDelivery.php" afterPath="$PROJECT_DIR$/application/common/model/BillDelivery.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -190,10 +192,10 @@
       <file leaf-file-name="BillDelivery.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/common/model/BillDelivery.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5262">
-              <caret line="235" column="31" lean-forward="false" selection-start-line="235" selection-start-column="20" selection-end-line="235" selection-end-column="31" />
+            <state relative-caret-position="225">
+              <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
               <folding>
-                <marker date="1543588464000" expanded="true" signature="10848:11080" ph="SELECT DATE_... " />
+                <marker date="1545009442612" expanded="true" signature="10854:11086" ph="SELECT DATE_... " />
               </folding>
             </state>
           </provider>
@@ -396,7 +398,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/manage/view/layout.html" />
         <option value="$PROJECT_DIR$/public/install/step1.html" />
         <option value="$PROJECT_DIR$/application/common/model/Setting.php" />
         <option value="$PROJECT_DIR$/application/manage/view/index/index.html" />
@@ -447,6 +448,7 @@
         <option value="$PROJECT_DIR$/application/common/model/Cart.php" />
         <option value="$PROJECT_DIR$/h5/src/pages/order/FirmOrder.vue" />
         <option value="$PROJECT_DIR$/h5/src/components/OrderCell.vue" />
+        <option value="$PROJECT_DIR$/application/common/model/BillDelivery.php" />
       </list>
     </option>
   </component>
@@ -482,7 +484,7 @@
       <path value="$PROJECT_DIR$/vendor/myxland/think-addons" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -696,15 +698,15 @@
       <workItem from="1544529920613" duration="6423000" />
       <workItem from="1544598379183" duration="18546000" />
       <workItem from="1544771144538" duration="5370000" />
-      <workItem from="1544837344938" duration="24736000" />
+      <workItem from="1544837344938" duration="24912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142341000" />
+    <option name="totallyTimeSpent" value="142517000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1146,10 +1148,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/common/model/BillDelivery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5262">
-          <caret line="235" column="31" lean-forward="false" selection-start-line="235" selection-start-column="20" selection-end-line="235" selection-end-column="31" />
+        <state relative-caret-position="225">
+          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
           <folding>
-            <marker date="1543588464000" expanded="true" signature="10848:11080" ph="SELECT DATE_... " />
+            <marker date="1545009442612" expanded="true" signature="10854:11086" ph="SELECT DATE_... " />
           </folding>
         </state>
       </provider>

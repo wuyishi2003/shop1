@@ -13,6 +13,9 @@ use think\Db;
 class BillDelivery extends Common
 {
     const STATUS_READY = 1;                 //准备发货
+
+
+   
     const STATUS_ALREADY = 2;               //已发货
     const STATUS_CONFIRM = 3;               //已确认
     const STATUS_OTHER = 4;                 //其他
